@@ -1,0 +1,27 @@
+# web-key.txt — 仅可选的 Web 功能需要，且必须与 web_url.txt 同时配置。
+# 这是 Web 进程的管理凭据，不是普通只读 key。至少 16 个字符，
+# 只能包含字母、数字和 - . _ ~。
+# 缺少 Web 配置时不发送 Web 请求，Gateway 用量不受影响。
+# Gateway 仍需要 base_url.txt 与 gateway-key.txt。
+# 登录会把 key 放进查询参数；插件无法控制服务器日志。
+# 唯一生效位置：KOReader 设置目录 magpie/web-key.txt
+# （DataStorage:getSettingsDir()/magpie/）。
+# 不要放在插件目录，也不要放在旧的外部目录。本示例文件本身不会被读取。
+# 请使用你自己的 Web 进程实际使用的 key。下面的值是明确虚构的，不是真实密钥。
+# 以 # 开头的行是注释。第一个非空、非注释行才是 key。
+# 目录 0700、文件 0600 只是尽力而为，在 FAT 上不能提供保护。
+#
+# web-key.txt — required only for optional Web features, and only together with web_url.txt.
+# This is an admin credential for your Web process, not a read-only key.
+# At least 16 characters. Allowed: letters, digits, and - . _ ~
+# If Web config is missing, no Web request is sent, and Gateway usage still works.
+# Gateway still needs base_url.txt and gateway-key.txt.
+# Login puts the key in the query string. This plugin cannot control server logs.
+# The only live location is magpie/web-key.txt in the KOReader settings
+# directory (DataStorage:getSettingsDir()/magpie/).
+# Not the plugin directory, and not an old external directory.
+# This example file itself is not read. Obtain the key your own Web process uses.
+# The value below is explicitly fictional, not a real key.
+# Lines starting with # are comments. The first non-empty, non-comment line is the key.
+# chmod 0700/0600 is best-effort and does not protect FAT.
+EXAMPLE_ONLY_NOT_A_REAL_KEY

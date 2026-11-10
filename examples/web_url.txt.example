@@ -1,0 +1,25 @@
+# web_url.txt — 仅可选的 Web 功能需要，且必须与 web-key.txt 同时配置。
+# Web 提供项目费用和在飞详情。缺少 Web 配置时不发送 Web 请求，Gateway 用量不受影响。
+# Gateway 仍需要 base_url.txt 与 gateway-key.txt。不要从 Gateway 地址推导本端口。
+# 唯一生效位置：KOReader 设置目录 magpie/web_url.txt
+# （DataStorage:getSettingsDir()/magpie/）。
+# 不要放在插件目录，也不要放在旧的外部目录。本示例文件本身不会被读取。
+# 请填写你自己的、设备能够访问的 Web 基地址。下面的主机是虚构的，不会连通。
+# 现有传输只支持 http。不要写 https、账号（userinfo）、查询参数或片段。
+# 以 # 开头的行是注释。第一个非空、非注释行才是地址。
+# 目录 0700、文件 0600 只是尽力而为，在 FAT 上不能提供保护。
+#
+# web_url.txt — required only for optional Web features, and only together with web-key.txt.
+# Web covers project cost and in-flight detail. If Web config is missing, no Web
+# request is sent, and Gateway usage still works.
+# Gateway still needs base_url.txt and gateway-key.txt. Do not derive this port
+# from the Gateway URL.
+# The only live location is magpie/web_url.txt in the KOReader settings
+# directory (DataStorage:getSettingsDir()/magpie/).
+# Not the plugin directory, and not an old external directory.
+# This example file itself is not read. Use your own Web base URL that the device
+# can reach. The host below is fictional and will not connect.
+# The current transport is http only. No https, userinfo, query, or fragment.
+# Lines starting with # are comments. The first non-empty, non-comment line is the URL.
+# chmod 0700/0600 is best-effort and does not protect FAT.
+http://web.example.invalid:3430

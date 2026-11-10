@@ -1,0 +1,25 @@
+# gateway-key.txt — Gateway 功能必需，须与 base_url.txt 同时配置。
+# 这是你自己的 Gateway key。key 的权限决定用量和配额能看到多少；
+# 受限 key 不保证能看到全局数据。
+# Web 是可选项，不使用这个 key。Web 需要单独的 web_url.txt 与 web-key.txt。
+# 缺少其中一侧时，不发送那一侧的请求。
+# 唯一生效位置：KOReader 设置目录 magpie/gateway-key.txt
+# （DataStorage:getSettingsDir()/magpie/）。
+# 不要放在插件目录，也不要放在旧的外部目录。本示例文件本身不会被读取。
+# 请向你自己的 Gateway 取得 key。下面的值是明确虚构的，不是真实密钥。
+# 以 # 开头的行是注释。第一个非空、非注释行才是 key。
+# 目录 0700、文件 0600 只是尽力而为，在 FAT 上不能提供保护。
+#
+# gateway-key.txt — required for Gateway features, together with base_url.txt.
+# Use a key you created yourself. Its permissions control which usage and
+# quota data you can see; a restricted key is not guaranteed to show global data.
+# Web is optional and does not use this key. Web needs web_url.txt and web-key.txt.
+# A missing side sends no request for that side.
+# The only live location is magpie/gateway-key.txt in the KOReader settings
+# directory (DataStorage:getSettingsDir()/magpie/).
+# Not the plugin directory, and not an old external directory.
+# This example file itself is not read. Obtain your own key.
+# The value below is explicitly fictional, not a real key.
+# Lines starting with # are comments. The first non-empty, non-comment line is the key.
+# chmod 0700/0600 is best-effort and does not protect FAT.
+EXAMPLE_ONLY_NOT_A_REAL_KEY

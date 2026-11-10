@@ -1,0 +1,31 @@
+# base_url.txt — Gateway 功能必需，须与 gateway-key.txt 同时配置。
+# 覆盖今日用量、配额、趋势，以及网关侧的在飞数据。
+# Web（项目费用、在飞详情）是可选项，另需 web_url.txt 与 web-key.txt。
+# 插件不会从本地址猜测 Web 端口。缺少 Web 配置时不发送 Web 请求。
+# 唯一生效位置：KOReader 设置目录 magpie/base_url.txt
+# （DataStorage:getSettingsDir()/magpie/）。
+# 不要放在插件目录，也不要放在旧的外部目录。本示例文件本身不会被读取。
+# 请改成你自己的 Gateway 基地址。下面的主机是虚构的，不会连通。
+# 允许 http 或 https。不要写账号（userinfo）、查询参数或片段。
+# 现有 HTTPS 传输不校验证书（verify none），不要把它说成已验证证书。
+# 菜单「网关地址…」只写入设置目录里的 base_url.txt。
+# 以 # 开头的行是注释。第一个非空、非注释行才是地址。
+# 目录 0700、文件 0600 只是尽力而为，在 FAT 上不能提供保护。
+#
+# base_url.txt — required for Gateway features, together with gateway-key.txt.
+# Covers today's usage, quotas, trends, and the gateway side of in-flight data.
+# Web (project cost and in-flight detail) is optional and needs web_url.txt
+# and web-key.txt. This plugin does not guess a Web port from this address.
+# Missing Web config sends no Web request.
+# The only live location is magpie/base_url.txt in the KOReader settings
+# directory (DataStorage:getSettingsDir()/magpie/).
+# Not the plugin directory, and not an old external directory.
+# This example file itself is not read. Replace the value with your own
+# Gateway base URL. The host below is fictional and will not connect.
+# http or https only. No userinfo, query string, or fragment.
+# The existing HTTPS transport does not verify certificates (verify none).
+# Do not describe it as certificate-verified.
+# The menu item “网关地址…” writes only base_url.txt in the settings directory.
+# Lines starting with # are comments. The first non-empty, non-comment line is the URL.
+# chmod 0700/0600 is best-effort and does not protect FAT.
+http://gateway.example.invalid:8080

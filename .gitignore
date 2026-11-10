@@ -39,3 +39,41 @@ luac.out
 *.x86_64
 *.hex
 
+
+# Magpie release artifacts and private device config.
+# These patterns are not a secret scan: a tracked file can still contain secrets.
+dist/
+
+# Real key and address files. Match the basename only; do not ignore *.lua.
+base_url.txt
+gateway-key.txt
+web_url.txt
+web-key.txt
+apikey.txt
+magpie.lua
+
+# Example templates stay eligible to be tracked. *.zip stays ignored.
+!*.example
+!examples/**
+
+# Private session snapshots and diagnostic renders.
+*.snapshot
+live.js
+screenshots/
+*.png
+*.jpg
+*.jpeg
+*.webp
+
+# Reviewed README photos only; full conversions remain under ignored dist/.
+!docs/images/dashboard-usage.jpg
+!docs/images/dashboard-inflight.jpg
+!docs/images/dashboard-trends.jpg
+
+# Universal junk
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
+.vscode/
+.idea/

@@ -1,4 +1,4 @@
-# Magpie
+# Magpie-Kanban
 
 **[English](./README.md) | 简体中文**
 
